@@ -1842,32 +1842,34 @@
 		(uuid "c6ae6921-fb8e-4d24-832b-00d6ca53e91f")
 	)
 	(symbol
-		(lib_id "Device:C_Polarized")
-		(at 160.02 95.25 90)
+		(lib_id "Device:C")
+		(at 160.02 95.25 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "130a227e-54ca-446a-bcc8-94cfa23a8369")
+		(uuid "02daf414-3bda-4d67-a15f-8bcf2d2e67b3")
 		(property "Reference" "C22"
-			(at 160.02 89.662 90)
+			(at 158.242 98.806 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "4.7u"
-			(at 159.766 91.694 90)
+			(at 156.972 91.44 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:CP_Elec_5x4.5"
-			(at 163.83 94.2848 0)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 156.21 96.2152 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1884,7 +1886,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Polarized capacitor"
+		(property "Description" "Unpolarized capacitor"
 			(at 160.02 95.25 0)
 			(effects
 				(font
@@ -1893,20 +1895,11 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C22383606"
-			(at 160.02 95.25 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+		(pin "1"
+			(uuid "c82dc2ab-d9bd-4635-b22b-23d699b7f107")
 		)
 		(pin "2"
-			(uuid "afb8c93f-f705-42df-8fe5-f94f669c5876")
-		)
-		(pin "1"
-			(uuid "1c8e6128-917d-40fd-b633-a8f2e42287ec")
+			(uuid "364737fe-2a4d-4576-8f79-36a21c54c6e9")
 		)
 		(instances
 			(project "head_amp"
@@ -1931,7 +1924,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1b8f8f6f-a056-4e7f-9934-042d25b8e565")
-		(property "Reference" "#PWR044"
+		(property "Reference" "#PWR043"
 			(at 102.87 111.76 0)
 			(effects
 				(font
@@ -1981,11 +1974,11 @@
 		(instances
 			(project "head_amp"
 				(path "/0014c904-68b6-48b8-8ea7-8965ecf006e4/6df245d6-f85a-43d4-97d7-c3cf8e7ca60c"
-					(reference "#PWR044")
+					(reference "#PWR043")
 					(unit 1)
 				)
 				(path "/0014c904-68b6-48b8-8ea7-8965ecf006e4/8fbf9d53-9f77-45a0-892f-38fc11a28623"
-					(reference "#PWR055")
+					(reference "#PWR054")
 					(unit 1)
 				)
 			)
@@ -2001,7 +1994,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2471206b-ec28-40e4-8485-8b330608fea0")
-		(property "Reference" "#PWR045"
+		(property "Reference" "#PWR044"
 			(at 163.83 100.33 0)
 			(effects
 				(font
@@ -2052,11 +2045,84 @@
 		(instances
 			(project "head_amp"
 				(path "/0014c904-68b6-48b8-8ea7-8965ecf006e4/6df245d6-f85a-43d4-97d7-c3cf8e7ca60c"
-					(reference "#PWR045")
+					(reference "#PWR044")
 					(unit 1)
 				)
 				(path "/0014c904-68b6-48b8-8ea7-8965ecf006e4/8fbf9d53-9f77-45a0-892f-38fc11a28623"
-					(reference "#PWR056")
+					(reference "#PWR055")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 90.17 95.25 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "278acc81-e01a-4f9f-b93e-ff5f3d44cfff")
+		(property "Reference" "C20"
+			(at 88.392 98.806 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4.7u"
+			(at 87.122 91.44 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 86.36 96.2152 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 90.17 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 90.17 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2530ed3f-ca99-4aae-83bc-693d998e5f99")
+		)
+		(pin "2"
+			(uuid "0f59ae9e-b3b7-41d4-b956-342eb13499e2")
+		)
+		(instances
+			(project "head_amp"
+				(path "/0014c904-68b6-48b8-8ea7-8965ecf006e4/6df245d6-f85a-43d4-97d7-c3cf8e7ca60c"
+					(reference "C20")
+					(unit 1)
+				)
+				(path "/0014c904-68b6-48b8-8ea7-8965ecf006e4/8fbf9d53-9f77-45a0-892f-38fc11a28623"
+					(reference "C31")
 					(unit 1)
 				)
 			)
@@ -2218,7 +2284,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4143c7ce-4c3e-4807-ab96-a63ea5f89466")
-		(property "Reference" "#PWR041"
+		(property "Reference" "#PWR040"
 			(at 76.2 80.01 0)
 			(effects
 				(font
@@ -2268,11 +2334,11 @@
 		(instances
 			(project "head_amp"
 				(path "/0014c904-68b6-48b8-8ea7-8965ecf006e4/6df245d6-f85a-43d4-97d7-c3cf8e7ca60c"
-					(reference "#PWR041")
+					(reference "#PWR040")
 					(unit 1)
 				)
 				(path "/0014c904-68b6-48b8-8ea7-8965ecf006e4/8fbf9d53-9f77-45a0-892f-38fc11a28623"
-					(reference "#PWR052")
+					(reference "#PWR051")
 					(unit 1)
 				)
 			)
@@ -2435,7 +2501,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6fd8bc8c-91da-4424-bf71-cabdc5d301d1")
-		(property "Reference" "#PWR049"
+		(property "Reference" "#PWR048"
 			(at 185.42 105.41 0)
 			(effects
 				(font
@@ -2485,11 +2551,11 @@
 		(instances
 			(project "head_amp"
 				(path "/0014c904-68b6-48b8-8ea7-8965ecf006e4/6df245d6-f85a-43d4-97d7-c3cf8e7ca60c"
-					(reference "#PWR049")
+					(reference "#PWR048")
 					(unit 1)
 				)
 				(path "/0014c904-68b6-48b8-8ea7-8965ecf006e4/8fbf9d53-9f77-45a0-892f-38fc11a28623"
-					(reference "#PWR060")
+					(reference "#PWR059")
 					(unit 1)
 				)
 			)
@@ -2505,7 +2571,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "87571292-40d8-44ad-9894-21978f1c4d7f")
-		(property "Reference" "#PWR050"
+		(property "Reference" "#PWR049"
 			(at 185.42 121.92 0)
 			(effects
 				(font
@@ -2555,11 +2621,84 @@
 		(instances
 			(project "head_amp"
 				(path "/0014c904-68b6-48b8-8ea7-8965ecf006e4/6df245d6-f85a-43d4-97d7-c3cf8e7ca60c"
-					(reference "#PWR050")
+					(reference "#PWR049")
 					(unit 1)
 				)
 				(path "/0014c904-68b6-48b8-8ea7-8965ecf006e4/8fbf9d53-9f77-45a0-892f-38fc11a28623"
-					(reference "#PWR061")
+					(reference "#PWR060")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 168.91 97.79 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "968fb34a-4ec8-461a-b573-f73f75e71f6b")
+		(property "Reference" "C23"
+			(at 167.132 101.346 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4.7u"
+			(at 165.862 93.98 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 165.1 98.7552 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 168.91 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 168.91 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c9160759-9208-4b2c-b353-134800001b5e")
+		)
+		(pin "2"
+			(uuid "6ed411b9-0ee3-4cb0-b1e1-88d8dd6ed3a6")
+		)
+		(instances
+			(project "head_amp"
+				(path "/0014c904-68b6-48b8-8ea7-8965ecf006e4/6df245d6-f85a-43d4-97d7-c3cf8e7ca60c"
+					(reference "C23")
+					(unit 1)
+				)
+				(path "/0014c904-68b6-48b8-8ea7-8965ecf006e4/8fbf9d53-9f77-45a0-892f-38fc11a28623"
+					(reference "C34")
 					(unit 1)
 				)
 			)
@@ -2575,7 +2714,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9a824f93-b280-45c0-9165-bc8da8185e15")
-		(property "Reference" "#PWR042"
+		(property "Reference" "#PWR041"
 			(at 76.2 96.52 0)
 			(effects
 				(font
@@ -2625,11 +2764,11 @@
 		(instances
 			(project "head_amp"
 				(path "/0014c904-68b6-48b8-8ea7-8965ecf006e4/6df245d6-f85a-43d4-97d7-c3cf8e7ca60c"
-					(reference "#PWR042")
+					(reference "#PWR041")
 					(unit 1)
 				)
 				(path "/0014c904-68b6-48b8-8ea7-8965ecf006e4/8fbf9d53-9f77-45a0-892f-38fc11a28623"
-					(reference "#PWR053")
+					(reference "#PWR052")
 					(unit 1)
 				)
 			)
@@ -2716,87 +2855,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Polarized")
-		(at 168.91 97.79 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b49f6121-ef9d-4acb-93bb-c2b68589bd97")
-		(property "Reference" "C23"
-			(at 168.021 90.17 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "4.7u"
-			(at 168.021 92.71 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:CP_Elec_5x4.5"
-			(at 172.72 96.8248 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 168.91 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Polarized capacitor"
-			(at 168.91 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C22383606"
-			(at 168.91 97.79 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "196c4342-fb76-4c15-8246-4b355dd7f850")
-		)
-		(pin "1"
-			(uuid "20376cd2-c63b-4268-94ef-03ad9543ca33")
-		)
-		(instances
-			(project "head_amp"
-				(path "/0014c904-68b6-48b8-8ea7-8965ecf006e4/6df245d6-f85a-43d4-97d7-c3cf8e7ca60c"
-					(reference "C23")
-					(unit 1)
-				)
-				(path "/0014c904-68b6-48b8-8ea7-8965ecf006e4/8fbf9d53-9f77-45a0-892f-38fc11a28623"
-					(reference "C34")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "2025-10-27_07-11-20:WM8988LGECN_V")
 		(at 105.41 74.93 0)
 		(unit 1)
@@ -2832,7 +2890,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "WM8988LGECN/V"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C323851.pdf"
 			(at 105.41 74.93 0)
 			(effects
 				(font
@@ -2968,7 +3026,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c5ae9a2a-a95d-43f2-84eb-3968e2a7a373")
-		(property "Reference" "#PWR047"
+		(property "Reference" "#PWR046"
 			(at 172.72 104.14 0)
 			(effects
 				(font
@@ -3018,91 +3076,11 @@
 		(instances
 			(project "head_amp"
 				(path "/0014c904-68b6-48b8-8ea7-8965ecf006e4/6df245d6-f85a-43d4-97d7-c3cf8e7ca60c"
-					(reference "#PWR047")
+					(reference "#PWR046")
 					(unit 1)
 				)
 				(path "/0014c904-68b6-48b8-8ea7-8965ecf006e4/8fbf9d53-9f77-45a0-892f-38fc11a28623"
-					(reference "#PWR058")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Polarized")
-		(at 90.17 95.25 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "cb0d7fb1-5385-4b5a-a8b9-c3998ef9d232")
-		(property "Reference" "C20"
-			(at 89.916 89.154 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "4.7u"
-			(at 89.662 91.44 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:CP_Elec_5x4.5"
-			(at 86.36 96.2152 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 90.17 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Polarized capacitor"
-			(at 90.17 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C22383606"
-			(at 90.17 95.25 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "0c2b944d-716e-4b5b-bf2b-a481e92a00dc")
-		)
-		(pin "1"
-			(uuid "8b411aa8-f3c9-4366-90ac-3d92daa3b857")
-		)
-		(instances
-			(project "head_amp"
-				(path "/0014c904-68b6-48b8-8ea7-8965ecf006e4/6df245d6-f85a-43d4-97d7-c3cf8e7ca60c"
-					(reference "C20")
-					(unit 1)
-				)
-				(path "/0014c904-68b6-48b8-8ea7-8965ecf006e4/8fbf9d53-9f77-45a0-892f-38fc11a28623"
-					(reference "C31")
+					(reference "#PWR057")
 					(unit 1)
 				)
 			)
@@ -3118,7 +3096,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cdaded18-8b17-4744-8243-2c4227f38237")
-		(property "Reference" "#PWR040"
+		(property "Reference" "#PWR039"
 			(at 55.88 101.6 0)
 			(effects
 				(font
@@ -3168,11 +3146,11 @@
 		(instances
 			(project "head_amp"
 				(path "/0014c904-68b6-48b8-8ea7-8965ecf006e4/6df245d6-f85a-43d4-97d7-c3cf8e7ca60c"
-					(reference "#PWR040")
+					(reference "#PWR039")
 					(unit 1)
 				)
 				(path "/0014c904-68b6-48b8-8ea7-8965ecf006e4/8fbf9d53-9f77-45a0-892f-38fc11a28623"
-					(reference "#PWR051")
+					(reference "#PWR050")
 					(unit 1)
 				)
 			)
@@ -3189,7 +3167,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d73c657b-f154-4d68-ada8-3ec280065f01")
-		(property "Reference" "#PWR048"
+		(property "Reference" "#PWR047"
 			(at 176.53 101.6 0)
 			(effects
 				(font
@@ -3239,11 +3217,11 @@
 		(instances
 			(project "head_amp"
 				(path "/0014c904-68b6-48b8-8ea7-8965ecf006e4/6df245d6-f85a-43d4-97d7-c3cf8e7ca60c"
-					(reference "#PWR048")
+					(reference "#PWR047")
 					(unit 1)
 				)
 				(path "/0014c904-68b6-48b8-8ea7-8965ecf006e4/8fbf9d53-9f77-45a0-892f-38fc11a28623"
-					(reference "#PWR059")
+					(reference "#PWR058")
 					(unit 1)
 				)
 			)
@@ -3259,7 +3237,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d78e7813-fb46-4701-b513-34fdb3f439bb")
-		(property "Reference" "#PWR046"
+		(property "Reference" "#PWR045"
 			(at 168.91 86.36 0)
 			(effects
 				(font
@@ -3268,7 +3246,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3V3"
+		(property "Value" "+3V3D"
 			(at 168.91 77.47 0)
 			(effects
 				(font
@@ -3309,11 +3287,11 @@
 		(instances
 			(project "head_amp"
 				(path "/0014c904-68b6-48b8-8ea7-8965ecf006e4/6df245d6-f85a-43d4-97d7-c3cf8e7ca60c"
-					(reference "#PWR046")
+					(reference "#PWR045")
 					(unit 1)
 				)
 				(path "/0014c904-68b6-48b8-8ea7-8965ecf006e4/8fbf9d53-9f77-45a0-892f-38fc11a28623"
-					(reference "#PWR057")
+					(reference "#PWR056")
 					(unit 1)
 				)
 			)
@@ -3556,7 +3534,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fcd9cac1-9db1-44ef-9b0b-a370f865bf7b")
-		(property "Reference" "#PWR043"
+		(property "Reference" "#PWR042"
 			(at 92.71 88.9 0)
 			(effects
 				(font
@@ -3606,11 +3584,11 @@
 		(instances
 			(project "head_amp"
 				(path "/0014c904-68b6-48b8-8ea7-8965ecf006e4/6df245d6-f85a-43d4-97d7-c3cf8e7ca60c"
-					(reference "#PWR043")
+					(reference "#PWR042")
 					(unit 1)
 				)
 				(path "/0014c904-68b6-48b8-8ea7-8965ecf006e4/8fbf9d53-9f77-45a0-892f-38fc11a28623"
-					(reference "#PWR054")
+					(reference "#PWR053")
 					(unit 1)
 				)
 			)
