@@ -5036,15 +5036,15 @@
 		(fields_autoplaced yes)
 		(uuid "38189d87-cd27-49dd-9ddf-cf198459f385")
 		(property "Reference" "U2"
-			(at 253.365 90.805 0)
+			(at 253.365 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "PJ-320A"
-			(at 253.365 93.345 0)
+		(property "Value" "Headphone Jack"
+			(at 253.365 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
