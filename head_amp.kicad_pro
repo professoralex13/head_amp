@@ -189,7 +189,8 @@
       ],
       "track_widths": [
         0.0,
-        0.2
+        0.2,
+        0.3
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -525,6 +526,10 @@
       {
         "netclass": "Power",
         "pattern": "+5V"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "GNDA"
       }
     ]
   },
@@ -688,11 +693,11 @@
     ],
     [
       "6df245d6-f85a-43d4-97d7-c3cf8e7ca60c",
-      "Ext->Int"
+      "Int->Ext"
     ],
     [
       "8fbf9d53-9f77-45a0-892f-38fc11a28623",
-      "Int->Ext"
+      "Ext->Int"
     ]
   ],
   "text_variables": {}

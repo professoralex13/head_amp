@@ -3028,7 +3028,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "c22f247c-496c-4831-979f-148bd6a1d9d5")
 		(property "Reference" "U3"
 			(at 130.81 64.77 0)
@@ -3046,7 +3045,7 @@
 				)
 			)
 		)
-		(property "Footprint" "footprints:QFN28_4X4_CIR-M"
+		(property "Footprint" "footprints:QFN28_4X4_CIR"
 			(at 105.41 74.93 0)
 			(effects
 				(font
