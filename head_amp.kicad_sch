@@ -4331,6 +4331,16 @@
 		)
 		(uuid "5c05b01d-c00d-4a1a-b3d5-3e3afddb93d9")
 	)
+	(label "Out_CLK"
+		(at 77.47 168.91 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "62784977-6cc4-4259-bf1e-a4fbdd9f472f")
+	)
 	(label "Ext->Int_CLK"
 		(at 62.23 74.93 0)
 		(effects
@@ -4411,16 +4421,6 @@
 		)
 		(uuid "8b34a513-7a5f-435a-82c1-dfd6dfad6123")
 	)
-	(label "Out_CLK"
-		(at 77.47 166.37 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "9547c1e2-a103-4224-94b3-033e34ee3be3")
-	)
 	(label "Mic_Right"
 		(at 237.49 85.09 180)
 		(effects
@@ -4500,16 +4500,6 @@
 			(justify right bottom)
 		)
 		(uuid "c0f866d9-8bcf-421c-8069-e62d63aee374")
-	)
-	(label "Out_DAT"
-		(at 77.47 168.91 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "c21f7dec-a679-4b15-8878-8defc02500a5")
 	)
 	(label "Int->Ext_Select"
 		(at 130.81 82.55 180)
@@ -4641,6 +4631,16 @@
 		)
 		(uuid "ed20e30d-b562-49d9-b4d5-a9552d075dcc")
 	)
+	(label "Out_DAT"
+		(at 77.47 166.37 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ed6a0f6c-420b-432f-917a-26df02f1c74c")
+	)
 	(label "Headset_Right"
 		(at 242.57 76.2 180)
 		(effects
@@ -4706,7 +4706,7 @@
 		(at 81.28 80.01 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -4818,7 +4818,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "23892ab1-a955-4ce6-b8c2-24138b4aedf9")
+		(uuid "1d439013-a091-4d8f-ada2-a34edf154cb4")
 		(property "Reference" "J7"
 			(at 270.51 21.5899 0)
 			(effects
@@ -4828,7 +4828,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Right_Speaker"
+		(property "Value" "Left_Speaker"
 			(at 270.51 24.1299 0)
 			(effects
 				(font
@@ -4837,7 +4837,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_XH_S2B-XH-A_1x02_P2.50mm_Horizontal"
+		(property "Footprint" "Connector_JST:JST_EH_S2B-EH_1x02_P2.50mm_Horizontal"
 			(at 267.97 21.59 0)
 			(effects
 				(font
@@ -4864,7 +4864,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C157931"
+		(property "LCSC" "C514173"
 			(at 267.97 21.59 0)
 			(effects
 				(font
@@ -4874,94 +4874,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "5e8e5448-a0f0-4f6f-9103-c464e9673a04")
+			(uuid "ca776927-cc63-4d94-a9b1-2cd1cc07fed8")
 		)
 		(pin "1"
-			(uuid "0e5c4139-3ed8-47fd-aa5e-68a91edd2570")
+			(uuid "48eaac9b-ac81-416b-89f9-756870b2bb05")
 		)
 		(instances
 			(project "head_amp"
 				(path "/0014c904-68b6-48b8-8ea7-8965ecf006e4"
 					(reference "J7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Generic:Conn_01x02")
-		(at 252.73 50.8 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "2b02c8d8-51b6-448f-95b2-ea62a9cb47a7")
-		(property "Reference" "J6"
-			(at 250.19 50.7999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Left_Mic"
-			(at 250.19 53.3399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Connector_JST:JST_XH_S2B-XH-A_1x02_P2.50mm_Horizontal"
-			(at 252.73 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 252.73 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 252.73 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C157931"
-			(at 252.73 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "73afb24f-d5dd-4ba1-88c5-da018bac4983")
-		)
-		(pin "1"
-			(uuid "cea89221-041b-475e-acbc-759795df8dde")
-		)
-		(instances
-			(project ""
-				(path "/0014c904-68b6-48b8-8ea7-8965ecf006e4"
-					(reference "J6")
 					(unit 1)
 				)
 			)
@@ -5776,6 +5697,84 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 267.97 50.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "64834bfa-4931-44fb-8c59-77183e6aa6ff")
+		(property "Reference" "J8"
+			(at 270.51 50.7999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Left_Speaker"
+			(at 270.51 53.3399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_JST:JST_EH_S2B-EH_1x02_P2.50mm_Horizontal"
+			(at 267.97 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 267.97 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 267.97 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C514173"
+			(at 267.97 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a04e2c7e-c7da-43d8-a572-2ec3da6acd6d")
+		)
+		(pin "1"
+			(uuid "69a52260-e336-467f-89d2-eb8501e20d7c")
+		)
+		(instances
+			(project "head_amp"
+				(path "/0014c904-68b6-48b8-8ea7-8965ecf006e4"
+					(reference "J8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
 		(at 67.31 97.79 0)
 		(unit 1)
@@ -6191,7 +6190,7 @@
 				)
 			)
 		)
-		(property "Value" "50k"
+		(property "Value" "51k"
 			(at 123.19 139.954 90)
 			(effects
 				(font
@@ -6635,84 +6634,6 @@
 			(project "head_amp"
 				(path "/0014c904-68b6-48b8-8ea7-8965ecf006e4"
 					(reference "#PWR018")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Generic:Conn_01x02")
-		(at 267.97 50.8 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "9c7ca7d1-7b87-422a-89c7-36d9cd457d75")
-		(property "Reference" "J8"
-			(at 270.51 50.7999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Right_Mic"
-			(at 270.51 53.3399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Connector_JST:JST_XH_S2B-XH-A_1x02_P2.50mm_Horizontal"
-			(at 267.97 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 267.97 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 267.97 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C157931"
-			(at 267.97 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "a2de952f-4ef5-4f79-93d0-f4a83a098ab0")
-		)
-		(pin "1"
-			(uuid "707b16aa-a7bd-4024-a3d0-481711fafecb")
-		)
-		(instances
-			(project "head_amp"
-				(path "/0014c904-68b6-48b8-8ea7-8965ecf006e4"
-					(reference "J8")
 					(unit 1)
 				)
 			)
@@ -7182,7 +7103,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_XH_S2B-XH-A_1x02_P2.50mm_Horizontal"
+		(property "Footprint" "Connector_JST:JST_EH_S2B-EH_1x02_P2.50mm_Horizontal"
 			(at 252.73 21.59 0)
 			(effects
 				(font
@@ -7209,7 +7130,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C157931"
+		(property "LCSC" "C514173"
 			(at 252.73 21.59 0)
 			(effects
 				(font
@@ -7501,7 +7422,7 @@
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "d4fecb17-866c-4e2a-9abe-f6435d21201a")
@@ -7599,6 +7520,85 @@
 			(project "head_amp"
 				(path "/0014c904-68b6-48b8-8ea7-8965ecf006e4"
 					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 252.73 50.8 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d5c1569f-8e62-4e3e-ad19-dca8cd2d72d8")
+		(property "Reference" "J6"
+			(at 250.19 50.7999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Left_Speaker"
+			(at 250.19 53.3399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_JST:JST_EH_S2B-EH_1x02_P2.50mm_Horizontal"
+			(at 252.73 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 252.73 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 252.73 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C514173"
+			(at 252.73 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "c97e2e29-b975-4017-b100-a1c9479bad19")
+		)
+		(pin "1"
+			(uuid "5450f960-3c6f-4cf7-bf19-2291e6f70206")
+		)
+		(instances
+			(project "head_amp"
+				(path "/0014c904-68b6-48b8-8ea7-8965ecf006e4"
+					(reference "J6")
 					(unit 1)
 				)
 			)
@@ -7785,7 +7785,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_XH_S3B-XH-A_1x03_P2.50mm_Horizontal"
+		(property "Footprint" "Connector_JST:JST_EH_S3B-EH_1x03_P2.50mm_Horizontal"
 			(at 90.17 139.7 0)
 			(effects
 				(font
@@ -7804,6 +7804,15 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 90.17 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C263754"
 			(at 90.17 139.7 0)
 			(effects
 				(font
@@ -8054,7 +8063,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_XH_S5B-XH-A_1x05_P2.50mm_Horizontal"
+		(property "Footprint" "Connector_JST:JST_EH_S5B-EH_1x05_P2.50mm_Horizontal"
 			(at 90.17 166.37 0)
 			(effects
 				(font
@@ -8073,6 +8082,15 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 90.17 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C265103"
 			(at 90.17 166.37 0)
 			(effects
 				(font
