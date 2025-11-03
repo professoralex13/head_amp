@@ -541,7 +541,7 @@
       "plot": "C:/Users/alex/Downloads/gerbs/",
       "pos_files": "C:/Users/alex/Downloads/",
       "specctra_dsn": "",
-      "step": "",
+      "step": "../../../Downloads/head_amp.step",
       "svg": "",
       "vrml": ""
     },
@@ -635,8 +635,8 @@
       "group_symbols": true,
       "include_excluded_from_bom": false,
       "name": "",
-      "sort_asc": false,
-      "sort_field": "${QUANTITY}"
+      "sort_asc": true,
+      "sort_field": "Value"
     },
     "connection_grid_size": 50.0,
     "drawing": {
