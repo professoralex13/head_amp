@@ -467,7 +467,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "head_amp.kicad_pro",
+    "filename": "main_board.kicad_pro",
     "version": 3
   },
   "net_settings": {
