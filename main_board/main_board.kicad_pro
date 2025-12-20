@@ -541,7 +541,7 @@
       "plot": "C:/Users/alex/Downloads/gerbs/",
       "pos_files": "C:/Users/alex/Downloads/",
       "specctra_dsn": "",
-      "step": "../../../Downloads/head_amp.step",
+      "step": "../../../../Downloads/head_amp.step",
       "svg": "",
       "vrml": ""
     },
