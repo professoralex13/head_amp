@@ -38,4 +38,6 @@ esp_err_t reset_registers(spi_codec_device device);
 esp_err_t set_output_mix(spi_codec_device device, Channel channel,
                          uint8_t leftVolume, uint8_t rightVolume);
 
+esp_err_t set_dac_mute(spi_codec_device device, bool mute);
+
 #endif

@@ -218,3 +218,21 @@ esp_err_t set_output_mix(spi_codec_device device, Channel channel,
 
   return write_register(address2, data2, device);
 }
+
+esp_err_t set_dac_mute(spi_codec_device device, bool mute) {
+  bool adc_attenuate = false;
+  bool dac_attenuate = false;
+
+  bool adchpd = false;
+
+  bool hpor = false;
+  uint8_t adcpol = 0b00;
+
+  uint8_t demphasis = 0b00;
+
+  uint16_t value = (adc_attenuate << 8) | (dac_attenuate << 7) |
+                   ((adchpd & 0b11) << 5) | (hpor << 4) | (mute << 3) |
+                   ((demphasis & 0b11) << 1) | adcpol;
+
+  return write_register(ADCDACControl, value, device);
+}

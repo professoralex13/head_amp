@@ -12,7 +12,8 @@ static const char *TAG = "WM8988";
 /**
  * Initializes the ESP32s SPI2 driver for controlling WM8988s CODECs
  */
-esp_err_t spi_bus_init(uint8_t clock_pin, uint8_t data_pin) {
+esp_err_t spi_bus_init(spi_host_device_t host_id, uint8_t clock_pin,
+                       uint8_t data_pin) {
   spi_bus_config_t bus_config = {
       .sclk_io_num = clock_pin,
       .mosi_io_num = data_pin,
@@ -22,7 +23,7 @@ esp_err_t spi_bus_init(uint8_t clock_pin, uint8_t data_pin) {
       .max_transfer_sz = 32,
   };
 
-  return spi_bus_initialize(SPI2_HOST, &bus_config, SPI_DMA_DISABLED);
+  return spi_bus_initialize(host_id, &bus_config, SPI_DMA_DISABLED);
 }
 
 /**
