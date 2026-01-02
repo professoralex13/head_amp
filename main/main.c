@@ -1,3 +1,4 @@
+#include "bluetooth/bluetooth.h"
 #include "codec/i2s.h"
 #include "codec/settings.h"
 #include "codec/spi.h"
@@ -47,4 +48,6 @@ void app_main(void) {
 
   i2s_device_init(&tx, &rx, EXT_INT_CLK_PIN, EXT_INT_LRC_PIN, EXT_INT_DAC_PIN,
                   EXT_INT_ADC_PIN);
+
+  bluetooth_init(tx);
 }
