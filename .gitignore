@@ -40,3 +40,6 @@ fp-info-cache
 *.kicad_prl
 
 jlcpcb/
+
+build/
+.cache/
