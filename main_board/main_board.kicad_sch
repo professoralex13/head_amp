@@ -4143,10 +4143,6 @@
 		(uuid "2de18cf6-54d0-41ca-9fd3-ed57744e1574")
 	)
 	(no_connect
-		(at 184.15 82.55)
-		(uuid "2fba72ce-cd03-42e2-9d26-cbf55a9ef562")
-	)
-	(no_connect
 		(at 40.64 50.8)
 		(uuid "49e608a8-56a7-4a0e-ab65-708d0187d868")
 	)
@@ -4155,12 +4151,16 @@
 		(uuid "5a636602-83be-4da7-bf86-1c4ccc9a6250")
 	)
 	(no_connect
-		(at 184.15 80.01)
-		(uuid "64bb5e90-2b4f-4e98-870c-be09cb9249f7")
-	)
-	(no_connect
 		(at 40.64 53.34)
 		(uuid "6a250021-9e1d-48fa-8951-0ab9129e31b8")
+	)
+	(no_connect
+		(at 184.15 100.33)
+		(uuid "a553fd8b-8004-45bf-8597-42ca2e843e84")
+	)
+	(no_connect
+		(at 184.15 97.79)
+		(uuid "b7682f91-0596-4740-8134-10d643269d00")
 	)
 	(no_connect
 		(at 153.67 46.99)
@@ -4509,6 +4509,16 @@
 			(type default)
 		)
 		(uuid "2f2103e8-0d1f-41f8-83ac-c16a63150750")
+	)
+	(wire
+		(pts
+			(xy 184.15 82.55) (xy 189.23 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "31fe2481-c9fd-49e5-9bcc-8595d56e3996")
 	)
 	(wire
 		(pts
@@ -4952,16 +4962,6 @@
 	)
 	(wire
 		(pts
-			(xy 199.39 97.79) (xy 184.15 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "71d5f603-be41-4f7f-b1c4-f5813ab94fb9")
-	)
-	(wire
-		(pts
 			(xy 60.96 175.26) (xy 62.23 175.26)
 		)
 		(stroke
@@ -5382,6 +5382,16 @@
 	)
 	(wire
 		(pts
+			(xy 199.39 80.01) (xy 184.15 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b447be48-d85e-434c-961a-971161f636a0")
+	)
+	(wire
+		(pts
 			(xy 53.34 146.05) (xy 53.34 147.32)
 		)
 		(stroke
@@ -5712,16 +5722,6 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 100.33) (xy 184.15 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dbfdcb5d-6099-468f-bf6e-992fdd8d5674")
-	)
-	(wire
-		(pts
 			(xy 146.05 41.91) (xy 153.67 41.91)
 		)
 		(stroke
@@ -5959,16 +5959,6 @@
 			(justify left bottom)
 		)
 		(uuid "06437152-cee7-4585-971c-3c37f5ce802b")
-	)
-	(label "Int->Ext_Select"
-		(at 199.39 97.79 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "25cd93d2-4c69-429e-b915-0ab26c1f838f")
 	)
 	(label "Headset_Right"
 		(at 262.89 93.98 180)
@@ -6450,6 +6440,16 @@
 		)
 		(uuid "cb0da730-ca9c-47d9-8dda-ea41368e6225")
 	)
+	(label "MOSI"
+		(at 189.23 82.55 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "cfc8289e-81fb-44ca-974e-8e6119560118")
+	)
 	(label "LED_Data"
 		(at 16.51 185.42 0)
 		(effects
@@ -6489,6 +6489,16 @@
 			(justify left bottom)
 		)
 		(uuid "d3cdfe3d-d4cf-4e2c-83f0-d34e84e40d01")
+	)
+	(label "Int->Ext_Select"
+		(at 199.39 80.01 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d8379ab0-4bd4-4fab-912e-71b010ca121c")
 	)
 	(label "MCU_EN"
 		(at 142.24 76.2 180)
@@ -6609,16 +6619,6 @@
 			(justify right bottom)
 		)
 		(uuid "f655d7c5-c5d4-406a-a640-7a1a06c34cec")
-	)
-	(label "MOSI"
-		(at 189.23 100.33 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "f9c72081-9d24-49f9-908a-3b3e76af318b")
 	)
 	(label "Speaker_Right"
 		(at 275.59 154.94 180)
